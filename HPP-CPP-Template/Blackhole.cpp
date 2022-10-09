@@ -1,8 +1,13 @@
 #include "Blackhole.hpp"
 #include <iostream>
 
-/** default constructor**/
+// Default Construtor
 template<class ItemType>
-Blackhole<ItemType>:: Blackhole(){
-   
+Blackhole<ItemType>::Blackhole(): sumStars(0){
+}
+
+
+template<class ItemType>
+int Blackhole<ItemType>::getSizeOfBlackhole() const{
+    return sumStars;
 }

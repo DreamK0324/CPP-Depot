@@ -4,7 +4,8 @@ CXXFLAGS = -std=c++17 -g -Wall
 SRC = '.'
 EXEC = main
 
-OBJ = ArrayBag.cpp Star.cpp main.cpp
+OBJ = Star.cpp main.cpp  
+# cant compile both cpp and hpp for the tempaltes
 
 all: $(EXEC)
 

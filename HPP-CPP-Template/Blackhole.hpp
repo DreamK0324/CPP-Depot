@@ -1,65 +1,39 @@
-#ifndef BLACKHOlE_HPP
-#define BLACKHOlE_HPP
+#ifndef BLACKHOLE_HPP
+#define BLACKHOLE_HPP
 
-#include <vector>
+#include "Star.hpp"
+#include <iostream>
+#include <vector>  // Vector requirment
 
 template <class ItemType>
-class Blackhole
-{
+class Blackhole{
+    private:
+    static const int defaultCapacity = 1000;
+    ItemType *starsPointer[defaultCapacity];
 
-public:
-  /** default constructor**/
-  Blackhole();
+    int sumStars;
 
-  /**
-     @return item_count_ : the current size of the bag
-  **/
-  int getCurrentSize() const;
+    std::vector<Star> starCollection;
 
-  /**
-     @return true if item_count_ == 0, false otherwise
-  **/
-  bool isEmpty() const;
-
-  /**
-     @return true if new_entry was successfully added to items_, false otherwise
-  **/
-  bool add(const ItemType &new_entry);
-
-  /**
-     @return true if an_entry was successfully removed from items_, false otherwise
-   **/
-  bool remove(const ItemType &an_entry);
-
-  /**
-     @post item_count_ == 0
-   **/
-  void clear();
-
-  /**
-     @return true if an_entry is found in items_, false otherwise
-     **/
-  bool contains(const ItemType &an_entry) const;
-
-  /**
-    @return the number of times an_entry is found in items_
-  **/
-  int getFrequencyOf(const ItemType &an_entry) const;
+    public:
+    // Function Prototype
+    // Default Constructor
+    Blackhole();
+    
+    int getSizeOfBlackhole() const;
 
 
-protected:
-  static const int DEFAULT_CAPACITY = 10; //max size of items_ at 10 by default for this project
-  ItemType items_[DEFAULT_CAPACITY];      // Array of bag items
-  int item_count_;                        // Current count of bag items
 
-  /**
-     @param target to be found in items_
-     @return either the index target in the array items_ or -1,
-     if the array does not contain the target.
-     **/
-  int getIndexOf(const ItemType &target) const;
 
-}; // end ArrayBag
 
-#include "Blackhole.cpp"
+
+
+
+
+
+
+
+};                                                     // ';' requirment of class
+
+#include "Blackhole.cpp"                               // Template requirment
 #endif
