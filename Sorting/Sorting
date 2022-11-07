@@ -30,7 +30,9 @@ Insertion Sort     worst case: O(n^2); best case: O(n)
 1 - 2   3   4|
 
 
-Merge Sort         worst case: O(nlogn); best case: O(nlogn) 
+
+Recursion: 
+Merge Sort         worst case: O(N*logN); best case: O(N*logN) 
 4 3 5 6 2 1
 (divide and conquer)
 4 3 5    6 2 1
@@ -44,5 +46,38 @@ Merge Sort         worst case: O(nlogn); best case: O(nlogn)
                     -> 1 2 3 4 5 6
 
 
+Recursion: 
+Quick Sort       worst case: O(N*logN); best case: O(N^2)
+4 2 5 6 1 3
 
-Quick Sort       worst case:      ; best case: 
+Pivot = 3 
+4 > 3 -> I = 0, J = 0
+4 2 5 6 1 3
+
+2 < 3 -> I = 0, J = 1
+2 4 5 6 1 3
+ 
+5 > 3 -> I = 0, J = 1
+2 4 5 6 1 3
+
+6 > 3 -> I = 0, J = 1
+2 4 5 6 1 3
+
+1 < 3 -> I = 1, J = 2
+2 1 5 6 4 3
+
+J = 2
+2 1 |3| 6 4 5
+
+
+
+
+
+
+
+
+
+
+
+
+
