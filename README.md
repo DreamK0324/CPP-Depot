@@ -9,4 +9,4 @@ This is a place to review different topics in C++.
 
 **Sorting** introduces Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, and Quick Sort.
 
-**Recursion** 
+**Recursion**
