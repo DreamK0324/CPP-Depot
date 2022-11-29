@@ -11,5 +11,5 @@ This is a place to review different topics in C++.
 
 **Recursion** 
 
-**Stack/Queue** introduces mathematic operation. 
+**Stack and Queue** introduces mathematic operation. 
 
