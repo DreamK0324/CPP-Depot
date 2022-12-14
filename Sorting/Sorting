@@ -31,7 +31,8 @@ Insertion Sort     worst case: O(n^2); best case: O(n)
 
 
 
-Recursion: 
+Recursion Sorting: 
+
 Merge Sort         worst case: O(N*logN); best case: O(N*logN) 
 4 3 5 6 2 1
 (divide and conquer)
