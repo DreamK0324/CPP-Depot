@@ -47,7 +47,8 @@ Merge Sort         worst case: O(N*logN); best case: O(N*logN)
                     -> 1 2 3 4 5 6
 
 
-Recursion: 
+Recursion Sorting: 
+
 Quick Sort       worst case: O(N^2); best case: O(N*logN) 
 4 2 5 6 1 3
 
